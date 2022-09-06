@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="app3.css">
+</head>
+<body>
+    <center>
+
+    
+    <div id="p">
+        <p id="name" onclick="name()">Click here to get Name</p>
+        <p id="reg_no" onclick="reg_no()">Click here to get reg_no</p>
+    </div>
+
+    <div id="q">
+        <img onmouseover="largePic(this)" onmouseout="normPic(this)"
+        src="messi.jpg" width="320px" height="180px"><br><br>
+    
+
+        <p id="text" onmouseover="largetext(this)" onmouseout="normtext(this)">
+        messi</p>
+
+    </div>
+
+    <div id="r">
+       <h3>bappaditya_202000118@smit.smu.edu.in</h3>
+    </div>
+
+
+    <script>
+        function name(){
+            alert("Name: Bappaditya das")
+        }
+
+        function reg_no(){
+            alert("reg_no: 202000118")
+        }
+
+        function largePic(x){
+            x.style.width="640px";
+            x.style.height="360px";
+        }
+
+        function normPic(x){
+            x.style.width="320px"
+            x.style.height="180px"
+        }
+
+        function largetext(x){
+            x.style.fontSize="30px";
+           
+        }
+
+        function normtext(x){
+            x.style.fontSize="20px"
+           
+        }
+    </script>
+   </center>
+</body>
+</html>
