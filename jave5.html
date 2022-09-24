@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #b1
+            {
+                text-align: center;
+            }
+
+            #b2
+            {
+                text-align: center;
+            }
+
+            #b3
+            {
+                text-align: center;
+                background-color: lightskyblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="b1">
+            <input type="button" value="Click to know name & reg. no." onclick="alert_mess()">
+        </div>
+        <br></br>
+        <div id="b2">
+            <img id="img" src="edgar.jpg" width="350" height="450" onmouseover="enlarge()" onmouseout="shrink()">
+            <p id = "name" onmouseover="enlarge_text()" onmouseout="shrink_text()">Edgar Allen Poe</p>
+        </div>
+
+        <div id = "b3">
+            &#169;Official Email-ID : bappaditya_202000118@smit.smu.edu.in
+        </div>
+
+        <script>
+            function alert_mess()
+            {
+                alert("Name : BAPPADITYA DAS\nRegistration no. : 202000118");
+            }
+
+            function enlarge()
+            {
+                var x = document.getElementById("img");
+
+                x.width = "550";
+                x.height = "650";
+            }
+
+            function shrink()
+            {
+                var x = document.getElementById("img");
+
+                x.width = "250";
+                x.height = "350";
+            }
+
+            function enlarge_text()
+            {
+                var x = document.getElementById("name");
+
+                x.style.fontSize = "50px";
+            }
+
+            function shrink_text()
+            {
+                var x = document.getElementById("name");
+
+                x.style.fontSize = "20px";
+            }
+        </script>
+    </body>
+</html>
